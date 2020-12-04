@@ -1,8 +1,8 @@
 package test;
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import src.Money;
@@ -29,7 +29,6 @@ public class MoneyTest {
 	@Test
 	public void AdditionTest() {
 		Money moneyToAddEur = new Money(20, "EUR");
-		Money moneyToAddUsd = new Money(40, "USD");
 		
 		assertEquals(money.add(moneyToAddEur).Amount(), 30);
 	}

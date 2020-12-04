@@ -32,4 +32,14 @@ public class Money {
 		
 		return this;
 	}
+
+	public String getfCurrency() {
+		return fCurrency;
+	}
+
+	public void setfCurrency(String fCurrency) {
+		this.fCurrency = fCurrency;
+	}
+	
+	
 }
