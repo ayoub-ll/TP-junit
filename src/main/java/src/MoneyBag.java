@@ -17,8 +17,13 @@ public class MoneyBag {
 		return this;
 	}
 	
-	public void Add(Money money) {
-		this.moneyBagList.add(money);
+	public MoneyBag Add(Money money) {
+		// Si la money qu'on demande à ajouter est de la même devise que l'une des monnaies existantes 
+		// dans la collection, alors on l'ajoute
+		if(money.getfCurrency().equals(this.moneyBagList.get(0).getfCurrency()))
+			this.moneyBagList.add(money);
+		
+		return this;
 	}
 	
 	public void Subb(ArrayList<Money> moneyBag) {
