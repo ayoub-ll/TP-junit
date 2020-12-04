@@ -1,3 +1,4 @@
+package src;
 
 public class Money {
 	private int fAmount;
